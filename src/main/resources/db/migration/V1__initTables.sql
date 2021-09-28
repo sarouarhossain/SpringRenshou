@@ -1,0 +1,7 @@
+create table IF NOT EXISTS movie (
+    id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    name VARCHAR(256) NOT NULL,
+    director VARCHAR(256) NOT NULL,
+    release_date DATETIME,
+    PRIMARY KEY (id)
+) ENGINE=INNODB DEFAULT CHARSET=utf8;
