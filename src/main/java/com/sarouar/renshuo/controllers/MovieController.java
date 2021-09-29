@@ -3,7 +3,6 @@ package com.sarouar.renshuo.controllers;
 import com.sarouar.renshuo.models.db.Movie;
 import com.sarouar.renshuo.models.form.MovieForm;
 import com.sarouar.renshuo.repositories.MovieRepository;
-import org.springframework.data.relational.core.sql.In;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
