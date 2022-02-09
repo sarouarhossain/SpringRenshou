@@ -12,6 +12,7 @@ import java.util.List;
 
 @ControllerAdvice
 public class AppExceptionHandler {
+
   @ExceptionHandler(value = {ApplicationException.class})
   public ResponseEntity<ErrorResponse> handleApplicationException(ApplicationException e) {
     Error error = new Error(e.getCode(), e.getMessage(), e.getInfo());
@@ -40,6 +41,7 @@ public class AppExceptionHandler {
 
   @ExceptionHandler(value = {Exception.class})
   public ResponseEntity<ErrorResponse> handleRandomException(Exception e) {
+    e.printStackTrace();
     Error error = new Error(null, e.getMessage(), null);
     ErrorResponse response = new ErrorResponse(error);
     HttpStatus statusCode = HttpStatus.INTERNAL_SERVER_ERROR;

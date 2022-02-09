@@ -29,4 +29,9 @@ public class TestController {
     // throw new IllegalArgumentException("LLLLL");
     return new ResponseEntity<>(form, HttpStatus.OK);
   }
+
+  @GetMapping("/four/{id}")
+  public ResponseEntity<String> test4(@PathVariable String id){
+    return new ResponseEntity<>(id,HttpStatus.OK);
+  }
 }
