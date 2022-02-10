@@ -1,5 +1,6 @@
 package com.sarouar.renshuo.exceptions;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.FieldError;
@@ -11,6 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @ControllerAdvice
+@Slf4j
 public class AppExceptionHandler {
 
   @ExceptionHandler(value = {ApplicationException.class})
@@ -19,6 +21,7 @@ public class AppExceptionHandler {
     ErrorResponse response = new ErrorResponse(error);
     HttpStatus statuCode =
         e.getStatusCode() == null ? HttpStatus.INTERNAL_SERVER_ERROR : e.getStatusCode();
+    log.warn(e.getMessage(), e);
     return new ResponseEntity<>(response, statuCode);
   }
 
@@ -36,15 +39,16 @@ public class AppExceptionHandler {
             });
     ErrorResponse response = new ErrorResponse(errors);
     HttpStatus statusCode = HttpStatus.BAD_REQUEST;
+    log.warn(e.getMessage(), e);
     return new ResponseEntity<>(response, statusCode);
   }
 
   @ExceptionHandler(value = {Exception.class})
   public ResponseEntity<ErrorResponse> handleRandomException(Exception e) {
-    e.printStackTrace();
     Error error = new Error(null, e.getMessage(), null);
     ErrorResponse response = new ErrorResponse(error);
     HttpStatus statusCode = HttpStatus.INTERNAL_SERVER_ERROR;
+    log.warn(e.getMessage(), e);
     return new ResponseEntity<>(response, statusCode);
   }
 }

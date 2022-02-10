@@ -7,7 +7,7 @@
             class="ch.qos.logback.core.ConsoleAppender">
     <layout class="ch.qos.logback.classic.PatternLayout">
       <Pattern>
-        [%blue(%d{yyyy-MM-dd HH:mm:ss.SSS})] [%blue(%t)] [%highlight(%-5level)] - [request_id:%X{transactionId}] %yellow(%C{1.}): %msg%n%throwable
+        [%blue(%d{yyyy-MM-dd HH:mm:ss.SSS})] [%blue(%t)] [%highlight(%-5level)] - [traceId:%X{transactionId}] %yellow(%C{1.}): %msg%n%throwable
       </Pattern>
     </layout>
   </appender>

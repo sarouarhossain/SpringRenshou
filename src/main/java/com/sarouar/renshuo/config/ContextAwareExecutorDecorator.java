@@ -31,7 +31,6 @@ public class ContextAwareExecutorDecorator implements Executor, TaskExecutor {
 
   private Runnable decorateContextAware(Runnable command) {
     final Map<String, String> originalContextCopy = MDC.getCopyOfContextMap();
-
     return () -> {
       final Map<String, String> localContextCopy = MDC.getCopyOfContextMap();
 

@@ -44,3 +44,42 @@
 2022-02-10 13:27:57.538 | http-nio-9090-exec-2 | INFO  | request_id:2a4e0703-3da2-403d-bd7e-729177c479c9 | com.sarouar.renshuo.services.TestService: Hello from service method
 2022-02-10 13:27:57.539 | worker-thread-1 | INFO  | request_id:2a4e0703-3da2-403d-bd7e-729177c479c9 | com.sarouar.renshuo.services.TestService: Hello from different thread call
 2022-02-10 13:27:57.554 | http-nio-9090-exec-2 | INFO  | request_id:2a4e0703-3da2-403d-bd7e-729177c479c9 | com.sarouar.renshuo.interceptors.LoggingInterceptors: Request Finished. Time Taken = 20
+2022-02-10 13:32:38.312 | background-preinit | INFO  | request_id: | org.hibernate.validator.internal.util.Version: HV000001: Hibernate Validator 6.0.13.Final
+2022-02-10 13:32:38.317 | restartedMain | INFO  | request_id: | org.springframework.boot.StartupInfoLogger: Starting RenshuoApplication using Java 17 on P84738 with PID 7212 (/Users/sarouar.hossain/Documents/SpringPractice/SpringRenshou/target/classes started by sarouar.hossain in /Users/sarouar.hossain/Documents/SpringPractice/SpringRenshou)
+2022-02-10 13:32:38.317 | restartedMain | DEBUG | request_id: | org.springframework.boot.StartupInfoLogger: Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-02-10 13:32:38.318 | restartedMain | INFO  | request_id: | org.springframework.boot.SpringApplication: No active profile set, falling back to default profiles: default
+2022-02-10 13:32:38.361 | restartedMain | INFO  | request_id: | org.springframework.boot.logging.DeferredLog: Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-10 13:32:38.361 | restartedMain | INFO  | request_id: | org.springframework.boot.logging.DeferredLog: For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-10 13:32:39.120 | restartedMain | INFO  | request_id: | org.springframework.boot.web.embedded.tomcat.TomcatWebServer: Tomcat initialized with port(s): 9090 (http)
+2022-02-10 13:32:39.128 | restartedMain | INFO  | request_id: | org.apache.juli.logging.DirectJDKLog: Initializing ProtocolHandler ["http-nio-9090"]
+2022-02-10 13:32:39.129 | restartedMain | INFO  | request_id: | org.apache.juli.logging.DirectJDKLog: Starting service [Tomcat]
+2022-02-10 13:32:39.129 | restartedMain | INFO  | request_id: | org.apache.juli.logging.DirectJDKLog: Starting Servlet engine: [Apache Tomcat/9.0.53]
+2022-02-10 13:32:39.170 | restartedMain | INFO  | request_id: | org.apache.juli.logging.DirectJDKLog: Initializing Spring embedded WebApplicationContext
+2022-02-10 13:32:39.171 | restartedMain | INFO  | request_id: | org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 809 ms
+2022-02-10 13:32:39.440 | restartedMain | INFO  | request_id: | org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer: LiveReload server is running on port 35729
+2022-02-10 13:32:39.450 | restartedMain | INFO  | request_id: | org.apache.juli.logging.DirectJDKLog: Starting ProtocolHandler ["http-nio-9090"]
+2022-02-10 13:32:39.465 | restartedMain | INFO  | request_id: | org.springframework.boot.web.embedded.tomcat.TomcatWebServer: Tomcat started on port(s): 9090 (http) with context path ''
+2022-02-10 13:32:39.472 | restartedMain | INFO  | request_id: | org.springframework.boot.StartupInfoLogger: Started RenshuoApplication in 1.518 seconds (JVM running for 1.919)
+2022-02-10 13:32:43.681 | http-nio-9090-exec-2 | INFO  | request_id: | org.apache.juli.logging.DirectJDKLog: Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-10 13:32:43.681 | http-nio-9090-exec-2 | INFO  | request_id: | org.springframework.web.servlet.FrameworkServlet: Initializing Servlet 'dispatcherServlet'
+2022-02-10 13:32:43.682 | http-nio-9090-exec-2 | INFO  | request_id: | org.springframework.web.servlet.FrameworkServlet: Completed initialization in 0 ms
+2022-02-10 13:32:43.691 | http-nio-9090-exec-2 | INFO  | request_id:4fca6f54-13fa-44f7-b75c-db7372af6e65 | com.sarouar.renshuo.interceptors.LoggingInterceptors: Request started.
+2022-02-10 13:32:43.697 | http-nio-9090-exec-2 | INFO  | request_id:4fca6f54-13fa-44f7-b75c-db7372af6e65 | com.sarouar.renshuo.services.TestService: Hello from service method
+2022-02-10 13:32:43.698 | worker-thread-1 | INFO  | request_id:4fca6f54-13fa-44f7-b75c-db7372af6e65 | com.sarouar.renshuo.services.TestService: Hello from different thread call
+2022-02-10 13:32:43.712 | http-nio-9090-exec-2 | INFO  | request_id:4fca6f54-13fa-44f7-b75c-db7372af6e65 | com.sarouar.renshuo.interceptors.LoggingInterceptors: Request Finished. Time Taken = 19
+2022-02-10 13:43:47.047 | background-preinit | INFO  | request_id: | org.hibernate.validator.internal.util.Version: HV000001: Hibernate Validator 6.0.13.Final
+2022-02-10 13:43:47.051 | restartedMain | INFO  | request_id: | org.springframework.boot.StartupInfoLogger: Starting RenshuoApplication using Java 17 on P84738 with PID 7390 (/Users/sarouar.hossain/Documents/SpringPractice/SpringRenshou/target/classes started by sarouar.hossain in /Users/sarouar.hossain/Documents/SpringPractice/SpringRenshou)
+2022-02-10 13:43:47.052 | restartedMain | DEBUG | request_id: | org.springframework.boot.StartupInfoLogger: Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-02-10 13:43:47.052 | restartedMain | INFO  | request_id: | org.springframework.boot.SpringApplication: No active profile set, falling back to default profiles: default
+2022-02-10 13:43:47.100 | restartedMain | INFO  | request_id: | org.springframework.boot.logging.DeferredLog: Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-10 13:43:47.100 | restartedMain | INFO  | request_id: | org.springframework.boot.logging.DeferredLog: For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-10 13:43:47.884 | restartedMain | INFO  | request_id: | org.springframework.boot.web.embedded.tomcat.TomcatWebServer: Tomcat initialized with port(s): 9090 (http)
+2022-02-10 13:43:47.893 | restartedMain | INFO  | request_id: | org.apache.juli.logging.DirectJDKLog: Initializing ProtocolHandler ["http-nio-9090"]
+2022-02-10 13:43:47.893 | restartedMain | INFO  | request_id: | org.apache.juli.logging.DirectJDKLog: Starting service [Tomcat]
+2022-02-10 13:43:47.893 | restartedMain | INFO  | request_id: | org.apache.juli.logging.DirectJDKLog: Starting Servlet engine: [Apache Tomcat/9.0.53]
+2022-02-10 13:43:47.934 | restartedMain | INFO  | request_id: | org.apache.juli.logging.DirectJDKLog: Initializing Spring embedded WebApplicationContext
+2022-02-10 13:43:47.934 | restartedMain | INFO  | request_id: | org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 833 ms
+2022-02-10 13:43:48.247 | restartedMain | INFO  | request_id: | org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer: LiveReload server is running on port 35729
+2022-02-10 13:43:48.258 | restartedMain | INFO  | request_id: | org.apache.juli.logging.DirectJDKLog: Starting ProtocolHandler ["http-nio-9090"]
+2022-02-10 13:43:48.275 | restartedMain | INFO  | request_id: | org.springframework.boot.web.embedded.tomcat.TomcatWebServer: Tomcat started on port(s): 9090 (http) with context path ''
+2022-02-10 13:43:48.284 | restartedMain | INFO  | request_id: | org.springframework.boot.StartupInfoLogger: Started RenshuoApplication in 1.65 seconds (JVM running for 2.105)

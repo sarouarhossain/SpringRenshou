@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="INFO">
+  <Properties>
+    <Property name="log-path-text-root">./log4s</Property>
+  </Properties>
+  <Appenders>
+    <RollingFile name="RollingTextAppender" fileName="${log-path-text-root}.log"
+                 filePattern="${log-path-text-root}_%d{yyyyMMdd}_%i.gz">
+      <PatternLayout>
+        <pattern>[%d{yyyy-MM-dd HH:mm:ss.SSS}] [%t] [%-5level] [traceId=%X{transactionId}] %c{1.}: %msg%n</pattern>
+      </PatternLayout>
+      <Policies>
+        <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+      </Policies>
+      <DefaultRolloverStrategy max="90"/>
+    </RollingFile>
+    <Async name="RollingTextAsyncAppender">
+      <AppenderRef ref="RollingTextAppender"/>
+    </Async>
+
+    <Console name="stdout" target="SYSTEM_OUT">
+      <PatternLayout
+                          pattern="[%d{yyyy-MM-dd HH:mm:ss.SSS}] [%t] [%-5level] [traceId=%X{transactionId}] %c{1.}: %msg%n"/>
+    </Console>
+  </Appenders>
+  <Loggers>
+    <Logger name="com.sarouar.renshuo" level="info" additivity="false">
+      <AppenderRef ref="stdout"/>
+      <AppenderRef ref="RollingTextAsyncAppender"/>
+    </Logger>
+    <Logger name="org.springframework" level="info" additivity="false">
+      <AppenderRef ref="stdout"/>
+      <AppenderRef ref="RollingTextAsyncAppender"/>
+    </Logger>
+    <Logger name="org.hibernate" level="warn" additivity="false">
+      <AppenderRef ref="stdout"/>
+      <AppenderRef ref="RollingTextAsyncAppender"/>
+    </Logger>
+    <Root level="warn">
+      <AppenderRef ref="stdout"/>
+      <AppenderRef ref="RollingTextAsyncAppender"/>
+    </Root>
+  </Loggers>
+</Configuration>
