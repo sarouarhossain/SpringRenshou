@@ -2,6 +2,7 @@ package com.sarouar.renshuo.interceptors;
 
 import com.sarouar.renshuo.constants.AppConstants;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.logging.log4j.ThreadContext;
 import org.slf4j.MDC;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
@@ -20,7 +21,9 @@ public class LoggingInterceptors implements HandlerInterceptor {
 
     String transactionId = UUID.randomUUID().toString();
     long startTime = Instant.now().toEpochMilli();
-    MDC.put(AppConstants.TRANSACTION_ID, transactionId);
+    // MDC.put(AppConstants.TRANSACTION_ID, transactionId);
+
+    ThreadContext.put(AppConstants.TRANSACTION_ID, transactionId);
     request.setAttribute(AppConstants.START_TIME, startTime);
     log.info("Request started.");
     return true;
@@ -31,6 +34,7 @@ public class LoggingInterceptors implements HandlerInterceptor {
       HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex) {
     long startTime = (Long) request.getAttribute(AppConstants.START_TIME);
     log.info("Request Finished. Time Taken = " + (Instant.now().toEpochMilli() - startTime));
-    MDC.clear();
+    // MDC.clear();
+    ThreadContext.clearAll();
   }
 }

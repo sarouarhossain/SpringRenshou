@@ -2,6 +2,8 @@
 <Configuration status="INFO">
   <Properties>
     <Property name="log-path-text-root">./log4s</Property>
+    <Property name="log-path-json-root">./log4s_json</Property>
+
   </Properties>
   <Appenders>
     <RollingFile name="RollingTextAppender" fileName="${log-path-text-root}.log"
@@ -18,6 +20,28 @@
       <AppenderRef ref="RollingTextAppender"/>
     </Async>
 
+    <RollingFile name="RollingJsonAppender" fileName="${log-path-json-root}.log"
+                 filePattern="${log-path-json-root}_%d{yyyyMMdd}_%i.gz">
+      <PatternLayout>
+        <pattern>{
+          "timestamp":"%d{yyyy-MM-dd HH:mm:ss.SSS}",
+          "thread":"%t",
+          "level:":"%-5level",
+          "traceId":"%X{transactionId}",
+          "class":"%c{1.}",
+          "message":"%msg"
+          }%n
+        </pattern>
+      </PatternLayout>
+      <Policies>
+        <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+      </Policies>
+      <DefaultRolloverStrategy max="90"/>
+    </RollingFile>
+    <Async name="RollingJsonAsyncAppender">
+      <AppenderRef ref="RollingJsonAppender"/>
+    </Async>
+
     <Console name="stdout" target="SYSTEM_OUT">
       <PatternLayout
                           pattern="[%d{yyyy-MM-dd HH:mm:ss.SSS}] [%t] [%-5level] [traceId=%X{transactionId}] %c{1.}: %msg%n"/>
@@ -27,18 +51,25 @@
     <Logger name="com.sarouar.renshuo" level="info" additivity="false">
       <AppenderRef ref="stdout"/>
       <AppenderRef ref="RollingTextAsyncAppender"/>
+      <AppenderRef ref="RollingJsonAsyncAppender"/>
+    </Logger>
+    <Logger name="com.sarouar.renshuo" level="debug" additivity="false">
+      <AppenderRef ref="RollingJsonAsyncAppender"/>
     </Logger>
     <Logger name="org.springframework" level="info" additivity="false">
       <AppenderRef ref="stdout"/>
       <AppenderRef ref="RollingTextAsyncAppender"/>
+      <AppenderRef ref="RollingJsonAsyncAppender"/>
     </Logger>
     <Logger name="org.hibernate" level="warn" additivity="false">
       <AppenderRef ref="stdout"/>
       <AppenderRef ref="RollingTextAsyncAppender"/>
+      <AppenderRef ref="RollingJsonAsyncAppender"/>
     </Logger>
     <Root level="warn">
       <AppenderRef ref="stdout"/>
       <AppenderRef ref="RollingTextAsyncAppender"/>
+      <AppenderRef ref="RollingJsonAsyncAppender"/>
     </Root>
   </Loggers>
 </Configuration>

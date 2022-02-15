@@ -1,0 +1,536 @@
+{
+          "timestamp":"2022-02-14 15:52:46.098",
+          "thread":"restartedMain",
+          "level:":"INFO ",
+          "traceId":"",
+          "class":"c.s.r.RenshuoApplication",
+          "message":"Starting RenshuoApplication using Java 17 on P84738 with PID 33284 (/Users/sarouar.hossain/Documents/SpringPractice/SpringRenshou/target/classes started by sarouar.hossain in /Users/sarouar.hossain/Documents/SpringPractice/SpringRenshou)"
+          }
+{
+          "timestamp":"2022-02-14 15:52:46.106",
+          "thread":"restartedMain",
+          "level:":"INFO ",
+          "traceId":"",
+          "class":"c.s.r.RenshuoApplication",
+          "message":"No active profile set, falling back to default profiles: default"
+          }
+{
+          "timestamp":"2022-02-14 15:52:46.148",
+          "thread":"restartedMain",
+          "level:":"INFO ",
+          "traceId":"",
+          "class":"o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor",
+          "message":"Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable"
+          }
+{
+          "timestamp":"2022-02-14 15:52:46.149",
+          "thread":"restartedMain",
+          "level:":"INFO ",
+          "traceId":"",
+          "class":"o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor",
+          "message":"For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'"
+          }
+{
+          "timestamp":"2022-02-14 15:52:46.874",
+          "thread":"restartedMain",
+          "level:":"INFO ",
+          "traceId":"",
+          "class":"o.s.b.w.e.t.TomcatWebServer",
+          "message":"Tomcat initialized with port(s): 9090 (http)"
+          }
+{
+          "timestamp":"2022-02-14 15:52:46.932",
+          "thread":"restartedMain",
+          "level:":"INFO ",
+          "traceId":"",
+          "class":"o.s.b.w.s.c.ServletWebServerApplicationContext",
+          "message":"Root WebApplicationContext: initialization completed in 782 ms"
+          }
+{
+          "timestamp":"2022-02-14 15:52:47.192",
+          "thread":"restartedMain",
+          "level:":"INFO ",
+          "traceId":"",
+          "class":"o.s.b.d.a.OptionalLiveReloadServer",
+          "message":"LiveReload server is running on port 35729"
+          }
+{
+          "timestamp":"2022-02-14 15:52:47.217",
+          "thread":"restartedMain",
+          "level:":"INFO ",
+          "traceId":"",
+          "class":"o.s.b.w.e.t.TomcatWebServer",
+          "message":"Tomcat started on port(s): 9090 (http) with context path ''"
+          }
+{
+          "timestamp":"2022-02-14 15:52:47.225",
+          "thread":"restartedMain",
+          "level:":"INFO ",
+          "traceId":"",
+          "class":"c.s.r.RenshuoApplication",
+          "message":"Started RenshuoApplication in 1.405 seconds (JVM running for 2.181)"
+          }
+{
+          "timestamp":"2022-02-14 15:52:50.832",
+          "thread":"http-nio-9090-exec-2",
+          "level:":"INFO ",
+          "traceId":"",
+          "class":"o.s.w.s.DispatcherServlet",
+          "message":"Initializing Servlet 'dispatcherServlet'"
+          }
+{
+          "timestamp":"2022-02-14 15:52:50.833",
+          "thread":"http-nio-9090-exec-2",
+          "level:":"INFO ",
+          "traceId":"",
+          "class":"o.s.w.s.DispatcherServlet",
+          "message":"Completed initialization in 1 ms"
+          }
+{
+          "timestamp":"2022-02-14 15:52:50.842",
+          "thread":"http-nio-9090-exec-2",
+          "level:":"INFO ",
+          "traceId":"bb7622f6-4d54-400a-8d3b-1c19b4971407",
+          "class":"c.s.r.i.LoggingInterceptors",
+          "message":"Request started."
+          }
+{
+          "timestamp":"2022-02-14 15:52:50.847",
+          "thread":"http-nio-9090-exec-2",
+          "level:":"INFO ",
+          "traceId":"bb7622f6-4d54-400a-8d3b-1c19b4971407",
+          "class":"c.s.r.s.TestService",
+          "message":"Hello from service method"
+          }
+{
+          "timestamp":"2022-02-14 15:52:50.848",
+          "thread":"worker-thread-1",
+          "level:":"INFO ",
+          "traceId":"bb7622f6-4d54-400a-8d3b-1c19b4971407",
+          "class":"c.s.r.s.TestService",
+          "message":"Hello from different thread call"
+          }
+{
+          "timestamp":"2022-02-14 15:52:50.849",
+          "thread":"worker-thread-1",
+          "level:":"INFO ",
+          "traceId":"bb7622f6-4d54-400a-8d3b-1c19b4971407",
+          "class":"c.s.r.c.ContextAwareExecutorDecorator",
+          "message":"Test1"
+          }
+{
+          "timestamp":"2022-02-14 15:52:50.849",
+          "thread":"http-nio-9090-exec-2",
+          "level:":"INFO ",
+          "traceId":"bb7622f6-4d54-400a-8d3b-1c19b4971407",
+          "class":"c.s.r.s.TestService",
+          "message":"After async call"
+          }
+{
+          "timestamp":"2022-02-14 15:52:50.849",
+          "thread":"worker-thread-1",
+          "level:":"INFO ",
+          "traceId":"",
+          "class":"c.s.r.c.ContextAwareExecutorDecorator",
+          "message":"Test2"
+          }
+{
+          "timestamp":"2022-02-14 15:52:50.863",
+          "thread":"http-nio-9090-exec-2",
+          "level:":"INFO ",
+          "traceId":"bb7622f6-4d54-400a-8d3b-1c19b4971407",
+          "class":"c.s.r.i.LoggingInterceptors",
+          "message":"Request Finished. Time Taken = 19"
+          }
+{
+          "timestamp":"2022-02-14 15:54:16.885",
+          "thread":"restartedMain",
+          "level:":"INFO ",
+          "traceId":"",
+          "class":"c.s.r.RenshuoApplication",
+          "message":"Starting RenshuoApplication using Java 17 on P84738 with PID 33318 (/Users/sarouar.hossain/Documents/SpringPractice/SpringRenshou/target/classes started by sarouar.hossain in /Users/sarouar.hossain/Documents/SpringPractice/SpringRenshou)"
+          }
+{
+          "timestamp":"2022-02-14 15:54:16.891",
+          "thread":"restartedMain",
+          "level:":"INFO ",
+          "traceId":"",
+          "class":"c.s.r.RenshuoApplication",
+          "message":"No active profile set, falling back to default profiles: default"
+          }
+{
+          "timestamp":"2022-02-14 15:54:16.921",
+          "thread":"restartedMain",
+          "level:":"INFO ",
+          "traceId":"",
+          "class":"o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor",
+          "message":"Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable"
+          }
+{
+          "timestamp":"2022-02-14 15:54:16.921",
+          "thread":"restartedMain",
+          "level:":"INFO ",
+          "traceId":"",
+          "class":"o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor",
+          "message":"For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'"
+          }
+{
+          "timestamp":"2022-02-14 15:54:17.627",
+          "thread":"restartedMain",
+          "level:":"INFO ",
+          "traceId":"",
+          "class":"o.s.b.w.e.t.TomcatWebServer",
+          "message":"Tomcat initialized with port(s): 9090 (http)"
+          }
+{
+          "timestamp":"2022-02-14 15:54:17.681",
+          "thread":"restartedMain",
+          "level:":"INFO ",
+          "traceId":"",
+          "class":"o.s.b.w.s.c.ServletWebServerApplicationContext",
+          "message":"Root WebApplicationContext: initialization completed in 759 ms"
+          }
+{
+          "timestamp":"2022-02-14 15:54:17.910",
+          "thread":"restartedMain",
+          "level:":"INFO ",
+          "traceId":"",
+          "class":"o.s.b.d.a.OptionalLiveReloadServer",
+          "message":"LiveReload server is running on port 35729"
+          }
+{
+          "timestamp":"2022-02-14 15:54:17.933",
+          "thread":"restartedMain",
+          "level:":"INFO ",
+          "traceId":"",
+          "class":"o.s.b.w.e.t.TomcatWebServer",
+          "message":"Tomcat started on port(s): 9090 (http) with context path ''"
+          }
+{
+          "timestamp":"2022-02-14 15:54:17.940",
+          "thread":"restartedMain",
+          "level:":"INFO ",
+          "traceId":"",
+          "class":"c.s.r.RenshuoApplication",
+          "message":"Started RenshuoApplication in 1.311 seconds (JVM running for 1.954)"
+          }
+{
+          "timestamp":"2022-02-14 15:54:33.260",
+          "thread":"restartedMain",
+          "level:":"INFO ",
+          "traceId":"",
+          "class":"c.s.r.RenshuoApplication",
+          "message":"Starting RenshuoApplication using Java 17 on P84738 with PID 33324 (/Users/sarouar.hossain/Documents/SpringPractice/SpringRenshou/target/classes started by sarouar.hossain in /Users/sarouar.hossain/Documents/SpringPractice/SpringRenshou)"
+          }
+{
+          "timestamp":"2022-02-14 15:54:33.265",
+          "thread":"restartedMain",
+          "level:":"INFO ",
+          "traceId":"",
+          "class":"c.s.r.RenshuoApplication",
+          "message":"No active profile set, falling back to default profiles: default"
+          }
+{
+          "timestamp":"2022-02-14 15:54:33.290",
+          "thread":"restartedMain",
+          "level:":"INFO ",
+          "traceId":"",
+          "class":"o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor",
+          "message":"Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable"
+          }
+{
+          "timestamp":"2022-02-14 15:54:33.290",
+          "thread":"restartedMain",
+          "level:":"INFO ",
+          "traceId":"",
+          "class":"o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor",
+          "message":"For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'"
+          }
+{
+          "timestamp":"2022-02-14 15:54:33.846",
+          "thread":"restartedMain",
+          "level:":"INFO ",
+          "traceId":"",
+          "class":"o.s.b.w.e.t.TomcatWebServer",
+          "message":"Tomcat initialized with port(s): 9090 (http)"
+          }
+{
+          "timestamp":"2022-02-14 15:54:33.897",
+          "thread":"restartedMain",
+          "level:":"INFO ",
+          "traceId":"",
+          "class":"o.s.b.w.s.c.ServletWebServerApplicationContext",
+          "message":"Root WebApplicationContext: initialization completed in 606 ms"
+          }
+{
+          "timestamp":"2022-02-14 15:54:34.116",
+          "thread":"restartedMain",
+          "level:":"INFO ",
+          "traceId":"",
+          "class":"o.s.b.d.a.OptionalLiveReloadServer",
+          "message":"LiveReload server is running on port 35729"
+          }
+{
+          "timestamp":"2022-02-14 15:54:34.140",
+          "thread":"restartedMain",
+          "level:":"INFO ",
+          "traceId":"",
+          "class":"o.s.b.w.e.t.TomcatWebServer",
+          "message":"Tomcat started on port(s): 9090 (http) with context path ''"
+          }
+{
+          "timestamp":"2022-02-14 15:54:34.147",
+          "thread":"restartedMain",
+          "level:":"INFO ",
+          "traceId":"",
+          "class":"c.s.r.RenshuoApplication",
+          "message":"Started RenshuoApplication in 1.125 seconds (JVM running for 1.776)"
+          }
+{
+          "timestamp":"2022-02-14 15:54:46.176",
+          "thread":"http-nio-9090-exec-2",
+          "level:":"INFO ",
+          "traceId":"",
+          "class":"o.s.w.s.DispatcherServlet",
+          "message":"Initializing Servlet 'dispatcherServlet'"
+          }
+{
+          "timestamp":"2022-02-14 15:54:46.177",
+          "thread":"http-nio-9090-exec-2",
+          "level:":"INFO ",
+          "traceId":"",
+          "class":"o.s.w.s.DispatcherServlet",
+          "message":"Completed initialization in 1 ms"
+          }
+{
+          "timestamp":"2022-02-14 15:54:46.187",
+          "thread":"http-nio-9090-exec-2",
+          "level:":"INFO ",
+          "traceId":"ee48d66e-5367-4ecc-a069-46508e8723a8",
+          "class":"c.s.r.i.LoggingInterceptors",
+          "message":"Request started."
+          }
+{
+          "timestamp":"2022-02-14 15:54:46.193",
+          "thread":"http-nio-9090-exec-2",
+          "level:":"INFO ",
+          "traceId":"ee48d66e-5367-4ecc-a069-46508e8723a8",
+          "class":"c.s.r.s.TestService",
+          "message":"Hello from service method"
+          }
+{
+          "timestamp":"2022-02-14 15:54:46.195",
+          "thread":"worker-thread-1",
+          "level:":"INFO ",
+          "traceId":"ee48d66e-5367-4ecc-a069-46508e8723a8",
+          "class":"c.s.r.s.TestService",
+          "message":"Hello from different thread call"
+          }
+{
+          "timestamp":"2022-02-14 15:54:46.195",
+          "thread":"worker-thread-1",
+          "level:":"INFO ",
+          "traceId":"ee48d66e-5367-4ecc-a069-46508e8723a8",
+          "class":"c.s.r.c.ContextAwareExecutorDecorator",
+          "message":"Test1"
+          }
+{
+          "timestamp":"2022-02-14 15:54:46.195",
+          "thread":"http-nio-9090-exec-2",
+          "level:":"WARN ",
+          "traceId":"ee48d66e-5367-4ecc-a069-46508e8723a8",
+          "class":"c.s.r.s.TestService",
+          "message":"After async call"
+          }
+{
+          "timestamp":"2022-02-14 15:54:46.195",
+          "thread":"http-nio-9090-exec-2",
+          "level:":"ERROR",
+          "traceId":"ee48d66e-5367-4ecc-a069-46508e8723a8",
+          "class":"c.s.r.s.TestService",
+          "message":"Test Error"
+          }
+{
+          "timestamp":"2022-02-14 15:54:46.195",
+          "thread":"worker-thread-1",
+          "level:":"INFO ",
+          "traceId":"",
+          "class":"c.s.r.c.ContextAwareExecutorDecorator",
+          "message":"Test2"
+          }
+{
+          "timestamp":"2022-02-14 15:54:46.211",
+          "thread":"http-nio-9090-exec-2",
+          "level:":"INFO ",
+          "traceId":"ee48d66e-5367-4ecc-a069-46508e8723a8",
+          "class":"c.s.r.i.LoggingInterceptors",
+          "message":"Request Finished. Time Taken = 22"
+          }
+{
+          "timestamp":"2022-02-14 15:56:22.109",
+          "thread":"restartedMain",
+          "level:":"INFO ",
+          "traceId":"",
+          "class":"c.s.r.RenshuoApplication",
+          "message":"Starting RenshuoApplication using Java 17 on P84738 with PID 33366 (/Users/sarouar.hossain/Documents/SpringPractice/SpringRenshou/target/classes started by sarouar.hossain in /Users/sarouar.hossain/Documents/SpringPractice/SpringRenshou)"
+          }
+{
+          "timestamp":"2022-02-14 15:56:22.114",
+          "thread":"restartedMain",
+          "level:":"DEBUG",
+          "traceId":"",
+          "class":"c.s.r.RenshuoApplication",
+          "message":"Running with Spring Boot v2.5.5, Spring v5.3.10"
+          }
+{
+          "timestamp":"2022-02-14 15:56:22.114",
+          "thread":"restartedMain",
+          "level:":"INFO ",
+          "traceId":"",
+          "class":"c.s.r.RenshuoApplication",
+          "message":"No active profile set, falling back to default profiles: default"
+          }
+{
+          "timestamp":"2022-02-14 15:56:22.151",
+          "thread":"restartedMain",
+          "level:":"INFO ",
+          "traceId":"",
+          "class":"o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor",
+          "message":"Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable"
+          }
+{
+          "timestamp":"2022-02-14 15:56:22.152",
+          "thread":"restartedMain",
+          "level:":"INFO ",
+          "traceId":"",
+          "class":"o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor",
+          "message":"For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'"
+          }
+{
+          "timestamp":"2022-02-14 15:56:23.016",
+          "thread":"restartedMain",
+          "level:":"INFO ",
+          "traceId":"",
+          "class":"o.s.b.w.e.t.TomcatWebServer",
+          "message":"Tomcat initialized with port(s): 9090 (http)"
+          }
+{
+          "timestamp":"2022-02-14 15:56:23.074",
+          "thread":"restartedMain",
+          "level:":"INFO ",
+          "traceId":"",
+          "class":"o.s.b.w.s.c.ServletWebServerApplicationContext",
+          "message":"Root WebApplicationContext: initialization completed in 922 ms"
+          }
+{
+          "timestamp":"2022-02-14 15:56:23.381",
+          "thread":"restartedMain",
+          "level:":"INFO ",
+          "traceId":"",
+          "class":"o.s.b.d.a.OptionalLiveReloadServer",
+          "message":"LiveReload server is running on port 35729"
+          }
+{
+          "timestamp":"2022-02-14 15:56:23.416",
+          "thread":"restartedMain",
+          "level:":"INFO ",
+          "traceId":"",
+          "class":"o.s.b.w.e.t.TomcatWebServer",
+          "message":"Tomcat started on port(s): 9090 (http) with context path ''"
+          }
+{
+          "timestamp":"2022-02-14 15:56:23.427",
+          "thread":"restartedMain",
+          "level:":"INFO ",
+          "traceId":"",
+          "class":"c.s.r.RenshuoApplication",
+          "message":"Started RenshuoApplication in 1.596 seconds (JVM running for 2.499)"
+          }
+{
+          "timestamp":"2022-02-14 15:56:33.429",
+          "thread":"http-nio-9090-exec-2",
+          "level:":"INFO ",
+          "traceId":"",
+          "class":"o.s.w.s.DispatcherServlet",
+          "message":"Initializing Servlet 'dispatcherServlet'"
+          }
+{
+          "timestamp":"2022-02-14 15:56:33.430",
+          "thread":"http-nio-9090-exec-2",
+          "level:":"INFO ",
+          "traceId":"",
+          "class":"o.s.w.s.DispatcherServlet",
+          "message":"Completed initialization in 1 ms"
+          }
+{
+          "timestamp":"2022-02-14 15:56:33.439",
+          "thread":"http-nio-9090-exec-2",
+          "level:":"INFO ",
+          "traceId":"fb3052d2-2fa2-48dd-9a20-8ac0c230ba99",
+          "class":"c.s.r.i.LoggingInterceptors",
+          "message":"Request started."
+          }
+{
+          "timestamp":"2022-02-14 15:56:33.445",
+          "thread":"http-nio-9090-exec-2",
+          "level:":"INFO ",
+          "traceId":"fb3052d2-2fa2-48dd-9a20-8ac0c230ba99",
+          "class":"c.s.r.s.TestService",
+          "message":"Hello from service method"
+          }
+{
+          "timestamp":"2022-02-14 15:56:33.446",
+          "thread":"worker-thread-1",
+          "level:":"INFO ",
+          "traceId":"fb3052d2-2fa2-48dd-9a20-8ac0c230ba99",
+          "class":"c.s.r.s.TestService",
+          "message":"Hello from different thread call"
+          }
+{
+          "timestamp":"2022-02-14 15:56:33.446",
+          "thread":"worker-thread-1",
+          "level:":"INFO ",
+          "traceId":"fb3052d2-2fa2-48dd-9a20-8ac0c230ba99",
+          "class":"c.s.r.c.ContextAwareExecutorDecorator",
+          "message":"Test1"
+          }
+{
+          "timestamp":"2022-02-14 15:56:33.446",
+          "thread":"http-nio-9090-exec-2",
+          "level:":"WARN ",
+          "traceId":"fb3052d2-2fa2-48dd-9a20-8ac0c230ba99",
+          "class":"c.s.r.s.TestService",
+          "message":"After async call"
+          }
+{
+          "timestamp":"2022-02-14 15:56:33.446",
+          "thread":"http-nio-9090-exec-2",
+          "level:":"ERROR",
+          "traceId":"fb3052d2-2fa2-48dd-9a20-8ac0c230ba99",
+          "class":"c.s.r.s.TestService",
+          "message":"Test Error"
+          }
+{
+          "timestamp":"2022-02-14 15:56:33.446",
+          "thread":"http-nio-9090-exec-2",
+          "level:":"DEBUG",
+          "traceId":"fb3052d2-2fa2-48dd-9a20-8ac0c230ba99",
+          "class":"c.s.r.s.TestService",
+          "message":"test debug"
+          }
+{
+          "timestamp":"2022-02-14 15:56:33.446",
+          "thread":"worker-thread-1",
+          "level:":"INFO ",
+          "traceId":"",
+          "class":"c.s.r.c.ContextAwareExecutorDecorator",
+          "message":"Test2"
+          }
+{
+          "timestamp":"2022-02-14 15:56:33.459",
+          "thread":"http-nio-9090-exec-2",
+          "level:":"INFO ",
+          "traceId":"fb3052d2-2fa2-48dd-9a20-8ac0c230ba99",
+          "class":"c.s.r.i.LoggingInterceptors",
+          "message":"Request Finished. Time Taken = 19"
+          }

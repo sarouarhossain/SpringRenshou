@@ -1,18 +1,19 @@
 package com.sarouar.renshuo.config;
 
 import lombok.extern.slf4j.Slf4j;
-import org.apache.logging.log4j.ThreadContext;
+import org.slf4j.MDC;
 import org.springframework.core.task.TaskExecutor;
 
 import java.util.Map;
-import java.util.concurrent.Executor;
 import java.util.concurrent.RejectedExecutionException;
 
+import java.util.concurrent.Executor;
+
 @Slf4j
-public class ContextAwareExecutorDecorator implements Executor, TaskExecutor {
+public class ContextAwareExecutorDecoratorForMDC implements Executor, TaskExecutor {
   private final Executor executor;
 
-  public ContextAwareExecutorDecorator(Executor executor) {
+  public ContextAwareExecutorDecoratorForMDC(Executor executor) {
     this.executor = executor;
   }
 
@@ -31,33 +32,40 @@ public class ContextAwareExecutorDecorator implements Executor, TaskExecutor {
     executor.execute(ctxAwareCommand);
   }
 
+  /**
+   * Decorate the local thread MDC context
+   *
+   * @param command command to execute
+   * @return runnable
+   */
   private Runnable decorateContextAware(Runnable command) {
     // Caller thread MDC copy
-    final Map<String, String> orgCopy = ThreadContext.getContext();
-
+    final Map<String, String> originalContextCopy = MDC.getCopyOfContextMap();
     return () -> {
-      ThreadContext.put("test", "Test Loc Data");
+      MDC.put("test", "Test Data");
       // Worker thread MDC copy
-      final Map<String, String> locCopy = ThreadContext.getContext();
+      final Map<String, String> localContextCopy = MDC.getCopyOfContextMap();
 
-      if (orgCopy != null) {
-        ThreadContext.clearMap();
-        ThreadContext.putAll(orgCopy);
+      MDC.clear();
+
+      // Set caller thread MDC copy
+      if (originalContextCopy != null) {
+        MDC.setContextMap(originalContextCopy);
       }
 
       command.run();
 
-      log.info("Test1");
-      System.out.println("TestData1: " + ThreadContext.get("test"));
+      log.warn("Test1");
+      System.out.println("Test1: " + MDC.get("test"));
 
-      ThreadContext.clearMap();
+      MDC.clear();
 
-      if (locCopy != null) {
-        ThreadContext.putAll(locCopy);
+      // Recover local thread MDC copy
+      if (localContextCopy != null) {
+        MDC.setContextMap(localContextCopy);
       }
-
-      log.info("Test2");
-      System.out.println("TestData2: " + ThreadContext.get("test"));
+      log.warn("Test2");
+      System.out.println("Test2: " + MDC.get("test"));
     };
   }
 }

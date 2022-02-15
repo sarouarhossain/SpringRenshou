@@ -21,7 +21,11 @@ public class TestService {
 
   public String testMethod() {
     log.info("Hello from service method");
-    return getMessage().join();
+    var data = getMessage().join();
+    log.warn("After async call");
+    log.error("Test Error");
+    log.debug("test debug");
+    return data;
   }
 
   private CompletableFuture<String> getMessage() {
